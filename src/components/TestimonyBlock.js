@@ -9,72 +9,87 @@ import image5 from '../images/107.png';
 const TestimonyBlock = () => {
   return (
     <Wrapper>
-      <Card>
-        <Image src={image1} alt='' />
-        <section>
-          <h3>Jack Murphy</h3>
-          <h5>Designer, OLUGA STORES</h5>
-          <p>
-            I know it and I love it, but I haven’t always
-            followed it in this book. I start sentences with ands and buts.
-          </p>
-        </section>
-      </Card>
+      <h2>Word on the street about us</h2>
+       
+      <Testify>
+        <Card>
+          <Image src={image1} alt='' />
+          <section>
+            <h3>Jack Murphy</h3>
+            <h5>Designer, OLUGA STORES</h5>
+            <p>
+              I know it and I love it, but I haven’t always
+              followed it in this book. I start sentences with ands and buts.
+            </p>
+          </section>
+        </Card>
 
-      <Card>
-        <Image src={image2} alt='' />
-        <section>
-          <h3>Rea More</h3>
-          <h5>Model, MISITIRIOUS</h5>
-          <p>
-            I know it and I love it, but I haven’t always
-            followed it in this book. I start sentences with ands and buts.
-          </p>
-        </section>
-      </Card>
+        <Card>
+          <Image src={image2} alt='' />
+          <section>
+            <h3>Rea More</h3>
+            <h5>Model, MISITIRIOUS</h5>
+            <p>
+              I know it and I love it, but I haven’t always
+              followed it in this book. I start sentences with ands and buts.
+            </p>
+          </section>
+        </Card>
 
-      <Card>
-        <Image src={image3} alt='' />
-        <section>
-          <h3>Jessi Glenn</h3>
-          <h5>Marketing Director, SULP</h5>
-          <p>
-            I know it and I love it, but I haven’t always
-            followed it in this book. I start sentences with ands and buts.
-          </p>
-        </section>
-      </Card>
+        <Card>
+          <Image src={image3} alt='' />
+          <section>
+            <h3>Jessi Glenn</h3>
+            <h5>Marketing Director, SULP</h5>
+            <p>
+              I know it and I love it, but I haven’t always
+              followed it in this book. I start sentences with ands and buts.
+            </p>
+          </section>
+        </Card>
 
-      <Card>
-        <Image src={image4} alt='' />
-        <section>
-          <h3>Antony Bravka</h3>
-          <h5>CEO, MELPA</h5>
-          <p>
-            I know it and I love it, but I haven’t always
-            followed it in this book. I start sentences with ands and buts.
-          </p>
-        </section>
-      </Card>
+        <Card>
+          <Image src={image4} alt='' />
+          <section>
+            <h3>Antony Bravka</h3>
+            <h5>CEO, MELPA</h5>
+            <p>
+              I know it and I love it, but I haven’t always
+              followed it in this book. I start sentences with ands and buts.
+            </p>
+          </section>
+        </Card>
 
-      <Card>
-        <Image src={image5} alt='' />
-        <section>
-          <h3>Eric Miller</h3>
-          <h5>CEO, SULP</h5>
-          <p>
-            I know it and I love it, but I haven’t always
-            followed it in this book. I start sentences with ands and buts.
-          </p>
-        </section>
-      </Card>
+        <Card>
+          <Image src={image5} alt='' />
+          <section>
+            <h3>Eric Miller</h3>
+            <h5>CEO, SULP</h5>
+            <p>
+              I know it and I love it, but I haven’t always
+              followed it in this book. I start sentences with ands and buts.
+            </p>
+          </section>
+        </Card>
+      </Testify>
     </Wrapper>
+   
   )
 }
 
 export default TestimonyBlock;
 
-const Wrapper = styled.section`
+
+const Wrapper = styled.div`
+  background-color: inherit;
+  grid-area: testify;
+
+   h2{
+    padding: 10px 30px;
+   }
+`
+
+const Testify = styled.section`
   display: grid;
   grid-template-columns: repeat(5,1fr);
   background-color: inherit;
@@ -84,6 +99,7 @@ const Wrapper = styled.section`
    h5{
     color:#de9c9d;
     white-space: nowrap;
+    text-align: center;
    }
 
   section{
@@ -91,6 +107,7 @@ const Wrapper = styled.section`
       padding: 10px 0;
       color: #594e47
       white-space: nowrap;
+      text-align: center;
     }
   }
 

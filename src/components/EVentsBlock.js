@@ -9,32 +9,46 @@ import Event from "./Event";
 const EventsBlock = () => {
   return (
     <Wrapper>
-      <Card>
-        <Overlay />
-        {/* <Video autoPlay muted loop>
-          <source src={video} type="video/mp4" />
-        </Video> */}
-      </Card>
+      <h2>Events you wouldn't want to miss</h2>
+      <Events>
+        <Card>
+          <Overlay />
+          <Video autoPlay muted loop>
+            <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/rWFRtEk4Ejrjb627h/videoblocks-3324z_catwhdgroup110_rrkw06mzq__319d20e55a4f4ac2b3e1cc8dfcde2b7c__P360.mp4" type="video/mp4" />
+          </Video>
+        </Card>
 
-      <Card>
-        <Event name='MISITIRIOUS ESSENTIALS' image={image1} />
-        <Event name='THE RUNWAY' image={image2}/>
-        <Event name='MUSIC, WINES and FASHION' image={image3}/>
-        <Event name='ANNUAL FASHION GALA' image={image4} />
-      </Card>
+        <Card>
+          <Event name='MISITIRIOUS ESSENTIALS' image={image1} />
+          <Event name='THE RUNWAY' image={image2}/>
+          <Event name='MUSIC, WINES and FASHION' image={image3}/>
+          <Event name='ANNUAL FASHION GALA' image={image4} />
+        </Card>
+      </Events>
     </Wrapper>
+    
   )
 }
 
 export default EventsBlock;
 
+
 const Wrapper = styled.div`
+  grid-area: main;
+  background-color: inherit;
+  padding: 0 30px;
+
+  h2{
+    padding: 10px 0;
+  }
+`
+
+const Events = styled.div`
   display: grid;
   grid-area: main;
   grid-template-columns: 1.4fr 1fr;
   background-color: inherit;
   gap: 25px;
-  padding: 0 30px;
 
   @media screen and (max-width: 720px) {
     max-width: 100vw;

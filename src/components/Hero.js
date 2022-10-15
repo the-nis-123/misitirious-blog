@@ -14,10 +14,10 @@ const HeroSlider = () => {
   <Slider>
     <Overlay />    
     <SideBarIcons>
-      { IconWithStyles(FacebookWithCircle) }
-      { IconWithStyles(TwitterWithCircle) }
-      { IconWithStyles(InstagramWithCircle) }
-      { IconWithStyles(LinkedinWithCircle) }
+      <a href='https://github.com/the-nis-123' target="_blank" rel="noopener noreferrer">{ IconWithStyles(FacebookWithCircle) }</a>
+      <a href='https://twitter.com/niscloud_kintu' target="_blank" rel="noopener noreferrer">{ IconWithStyles(TwitterWithCircle) }</a>
+      <a href='https://github.com/the-nis-123' target="_blank" rel="noopener noreferrer">{ IconWithStyles(InstagramWithCircle) }</a>
+      <a href='https://www.linkedin.com/in/kintu-denis/' target="_blank" rel="noopener noreferrer">{ IconWithStyles(LinkedinWithCircle) }</a>
     </SideBarIcons>
 
     <Hero>
@@ -107,7 +107,7 @@ const Section = styled.section`
  }
 
  h4{
-  color: #de9c9d
+  color: purple;
  }
 
  section{

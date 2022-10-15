@@ -8,16 +8,16 @@ const Header = () => {
     <Wrapper>
       <Section>
         <Logo src={logo} alt='' />
-        <h2>MISITIRIOUS BLOG</h2>
+        <h2>MISITIRIOUS</h2>
       </Section>
       
       <Section>
-        <Section>
+        <section style={{display:'flex', color:'purple'}}>
           <Link to='/'>Home</Link>
           <Link to='/products'>Our Products</Link>
           <Link to='/events'>Events</Link>
           <Link to='/about'>About Us</Link>
-        </Section>
+        </section>
         <Button to='/'>Shop Now</Button>
       </Section>
     </Wrapper>
@@ -37,7 +37,7 @@ const Wrapper  = styled.header`
   border-bottom: 1px solid #d9d8dd;
 `
 
-const Section  = styled.section`
+const Section  = styled.div`
   display: flex;
   align-items:center;
 

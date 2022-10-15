@@ -13,26 +13,38 @@ import { Shopify } from '@styled-icons/boxicons-logos/Shopify';
 const PartnersBlock = () => {
   return (
     <Wrapper>
-      <PartnerCard Icon={Amazon} name='Amazon' />
-      <PartnerCard Icon={FiveHundredPx} name='FiveHundredPx' />
-      <PartnerCard  Icon={Ebay} name='Ebay' />
-      <PartnerCard Icon={Namebase} name='Namebase' />
-      <PartnerCard Icon={Shopware} name='Shopware' />
-      <PartnerCard Icon={Behance} name='Behance' />
-      <PartnerCard  Icon={Shopify} name='Shopify' />
+      <h2>Our business partners</h2>
+      <Partners>
+        <PartnerCard Icon={Amazon} name='Amazon' />
+        <PartnerCard Icon={FiveHundredPx} name='FiveHundredPx' />
+        <PartnerCard  Icon={Ebay} name='Ebay' />
+        <PartnerCard Icon={Namebase} name='Namebase' />
+        <PartnerCard Icon={Shopware} name='Shopware' />
+        <PartnerCard Icon={Behance} name='Behance' />
+        <PartnerCard  Icon={Shopify} name='Shopify' />
+      </Partners>
     </Wrapper>
+
+    
   )
 }
 
 export default PartnersBlock;
 
-const Wrapper = styled.section`
+const Wrapper = styled.div`
   background-color: white;
+  grid-area: partners;
+  padding:  30px;
+`
+
+
+const Partners = styled.section`
+  background-color: inherit;
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
   grid-area: partners;
-  padding: 50px;
+  padding: 20px 0;
 
   @media screen and (max-width: 680px) {
     max-width: 100vw;
@@ -40,4 +52,3 @@ const Wrapper = styled.section`
     grid-template-columns: repeat(2, 1fr);
   }
 `
-

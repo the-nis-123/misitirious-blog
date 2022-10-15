@@ -43,7 +43,7 @@ const Wrapper = styled.div`
   'main main main main main main'
   'partners partners partners partners partners partners'
   'left left menu menu menu menu'
-  'footer footer footer footer footer footer';
+  'testify testify testify testify testify testify';
 
   gap: 20px;
 `
