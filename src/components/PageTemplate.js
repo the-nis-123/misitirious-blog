@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FooterBlock from "../components/FooterBlock";
+import FooterBlock from "../components/Footer";
 
 
 function Cart({children, image, title, intro}) {

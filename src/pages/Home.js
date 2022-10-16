@@ -1,17 +1,16 @@
 import styled from "styled-components";
-import FooterBlock from "../components/FooterBlock";
+import FooterBlock from "../components/Footer";
 import Hero from "../components/Hero";
 import QuickAccess from "../components/QuickAccess";
 import TestimonyBlock from "../components/TestimonyBlock";
 import EventsBlock from "../components/EVentsBlock";
 import PartnersBlock from "../components/PartnersBlock";
-import ProductsBlock from "../components/ProductsBlock";
+import { LandingPageWidget } from "../components/PostWidget";
 import PosterBlock from "../components/PosterBlock";
 
 import image1 from '../images/556.jpg';
 import image2 from '../images/557.jpg';
 import image6 from '../images/112.png';
-
 
 
 function Cart() {
@@ -21,7 +20,7 @@ function Cart() {
         <Hero />
         <QuickAccess />
         <PosterBlock  image={image6}/>
-        <ProductsBlock image1={image1} image2={image2} />
+        <LandingPageWidget image1={image1} image2={image2} />
         <EventsBlock />
         <PartnersBlock />
         <TestimonyBlock />

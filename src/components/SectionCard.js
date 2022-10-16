@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-const Product = ({image, name}) => {
+const SectionCard = ({image, name}) => {
   return (
     <Section>
       <Image style={{ backgroundImage:`url(${image })`}} />
@@ -34,7 +34,7 @@ const Product = ({image, name}) => {
   )
 }
 
-export default Product;
+export default SectionCard;
 
 const Section = styled.div`
   border-radius: 5px;

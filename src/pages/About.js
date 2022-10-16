@@ -2,7 +2,7 @@ import styled from "styled-components";
 import PageTemplate from '../components/PageTemplate';
 import image from '../images/932.jpg';
 import PosterBlock from "../components/PosterBlock";
-import ProductsBlock from "../components/ProductsBlock";
+import AboutWidget from "../components/PostWidget";
 import useDummyText from "../hooks/useDummyText";
 
 
@@ -12,7 +12,6 @@ import image6 from '../images/112.png';
 
 
 const Products = () => {
-    
   const intro = useDummyText(1);
   const about = useDummyText(2);
   
@@ -25,7 +24,7 @@ const Products = () => {
       </BlockOne>
 
       <PosterBlock image={image6}/>
-      <ProductsBlock image1={image1} image2={image2} />
+      <AboutWidget image1={image1} image2={image2} />
        
     </PageTemplate>
   )

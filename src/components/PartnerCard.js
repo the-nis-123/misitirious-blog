@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import IconWithStyles from "./IconWithStyles";
-
   
 const PartnerCard = ({Icon, name}) => {
   return (
@@ -12,6 +10,14 @@ const PartnerCard = ({Icon, name}) => {
 }
 
 export default PartnerCard;
+
+
+const IconWithStyles = ( Icon ) => {
+  return (
+    <Icon size='60px' style={{color:'#594e47', display:'block', margin:'0 auto'}} />
+  )
+}
+
 
 const Wrapper = styled.div`
   background-color: inherit;

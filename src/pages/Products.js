@@ -2,7 +2,7 @@ import styled from "styled-components";
 import PageTemplate from '../components/PageTemplate';
 import image from '../images/862.jpg'
 import PosterBlock from "../components/PosterBlock";
-import ProductsBlock from "../components/ProductsBlock";
+import ProductsBlock from "../components/PostWidget";
 import useDummyText from "../hooks/useDummyText";
 
 
@@ -48,11 +48,4 @@ const BlockOne = styled.div`
  grid-area: header;
  padding: 15px 0;
  background-color: inherit;
-`
-
-const BlockThree = styled.div`
- grid-area: main;
-  padding: 30px 0;
- background-color: inherit;
- 
 `

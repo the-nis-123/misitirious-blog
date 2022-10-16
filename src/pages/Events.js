@@ -2,7 +2,7 @@ import styled from "styled-components";
 import PageTemplate from '../components/PageTemplate';
 import image2 from '../images/559.jpg';
 import PosterBlock from "../components/PosterBlock";
-import ProductsBlock from "../components/ProductsBlock";
+import EventWidget from "../components/PostWidget";
 import useDummyText from "../hooks/useDummyText";
 
 
@@ -34,7 +34,7 @@ const Products = () => {
       </BlockOne>
 
       <PosterBlock image={image6}/>
-      <ProductsBlock image1={image1} image2={image3} />
+      <EventWidget image1={image1} image2={image3} />
 
     </PageTemplate>
   )
@@ -47,11 +47,4 @@ const BlockOne = styled.div`
  grid-area: header;
  padding: 15px 0;
  background-color: inherit;
-`
-
-const BlockThree = styled.div`
- grid-area: main;
-  padding: 15px 0;
- background-color: inherit;
- 
 `
