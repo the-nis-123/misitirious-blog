@@ -4,9 +4,15 @@ import image2 from '../images/753.jpg';
 import image3 from '../images/557.jpg';
 import image4 from '../images/9453.jpg';
 
+import useHomeContext from '../hooks/useAppContext';
+import useDummyText from '../hooks/useDummyText';
+
 import Event from "./Event";
 
 const EventsBlock = () => {
+  const {events} = useHomeContext();
+  console.log(events);
+
   return (
     <Wrapper>
       <h2>Events you wouldn't want to miss</h2>

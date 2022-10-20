@@ -10,26 +10,23 @@ import image1 from '../images/556.jpg';
 import image2 from '../images/557.jpg';
 import image6 from '../images/112.png';
 
-import AboutPageContext from "../contexts/AboutPageContext";
 
 const Products = () => {
   const intro = useDummyText(1);
   const about = useDummyText(2);
   
   return (
-    <AboutPageContext>
-      <PageTemplate image={image} title='A BRIEF HISTORY' intro={intro}>
-        <BlockOne>
-          <For each='paragraph' of={about}>
-            <p> {paragraph} </p>
-          </For>
-        </BlockOne>
+    <PageTemplate image={image} title='A BRIEF HISTORY' intro={intro}>
+      <BlockOne>
+        <For each='paragraph' of={about}>
+          <p> {paragraph} </p>
+        </For>
+      </BlockOne>
 
-        <PosterBlock image={image6}/>
-        <AboutWidget image1={image1} image2={image2} />
-        
-      </PageTemplate>
-    </AboutPageContext>
+      <PosterBlock image={image6}/>
+      <AboutWidget image1={image1} image2={image2} />
+      
+    </PageTemplate>
   )
 }
 

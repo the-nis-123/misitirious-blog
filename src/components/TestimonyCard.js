@@ -1,17 +1,13 @@
 import styled from "styled-components";
-import image1 from '../images/114.png';
 
-const TestimonyCard = ({name, title, company, message}) => {
+const TestimonyCard = ({name, job, company,image, message}) => {
   return (
     <Wrapper>
-        <Image src={image1} alt='' />
+        <Image src={image} alt='' />
         <section>
-          <h3>Jack Murphy</h3>
-          <h5>Designer, OLUGA STORES</h5>
-          <p>
-            I know it and I love it, but I haven’t always
-            followed it in this book. I start sentences with ands and buts.
-          </p>
+          <h3>{name}</h3>
+          <h5>{job}, {company}</h5>
+          <p>{message}</p>
         </section>
     </Wrapper>
   )
@@ -33,6 +29,15 @@ const Wrapper = styled.div`
 
     a{
       color: #7e49f2;
+    }
+
+    p{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      line-clamp: 5; 
     }
   }
 `

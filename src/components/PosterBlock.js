@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import useHomeContext from '../hooks/useAppContext';
+import useDummyText from '../hooks/useDummyText';
 
 
 const PosterBlock = ({image}) => {
+  const {gallery} = useHomeContext();
+  console.log(gallery);
+
   return (
     <Wrapper style={{ backgroundImage: `url(${image})` }} >
       <Overlay />

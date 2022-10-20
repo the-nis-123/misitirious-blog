@@ -1,17 +1,29 @@
 import styled from "styled-components";
 import TestimonyCard from "./TestimonyCard";
+import useAppContext from '../hooks/useAppContext';
+import useDummyText from '../hooks/useDummyText';
 
 const TestimonyBlock = () => {
+  const {comments} = useAppContext();
+  const message = useDummyText(1);
+  
   return (
     <Wrapper>
       <h2>Word on the street about us</h2>
        
       <Testify>
-        <TestimonyCard />
-        <TestimonyCard/>
-        <TestimonyCard/>
-        <TestimonyCard/>
-        <TestimonyCard/>
+        <If condition={comments?.data}>
+          <For each='comment' of={comments.data}>
+            <TestimonyCard 
+            name={comment.username} 
+            job={comment.job}
+            image={comment.avatar}
+            company={comment.company}
+            message={message}
+            key={comment.id}
+          />
+          </For>
+        </If>
       </Testify>
     </Wrapper>
    

@@ -10,7 +10,6 @@ import image1 from '../images/556.jpg';
 import image2 from '../images/557.jpg';
 import image6 from '../images/112.png';
 
-import ProductsPageContext from "../contexts/ProductsPageContext";
 
 const intro = `
   In this tutorial Python will be written in a text editor.
@@ -26,19 +25,17 @@ const Products = () => {
   const about = useDummyText(2);
   
   return (
-    <ProductsPageContext>
-      <PageTemplate title='our range of products' image={image} intro={intro}>
-        <BlockOne>
-          <h2>WHAT WE DO</h2>
-          <For each='paragraph' of={about}>
-            <p> {paragraph} </p>
-          </For>
-        </BlockOne>
-          
-        <PosterBlock image={image6}/>
-        <ProductsBlock image1={image1} image2={image2} />
-      </PageTemplate>
-    </ProductsPageContext>
+    <PageTemplate title='our range of products' image={image} intro={intro}>
+      <BlockOne>
+        <h2>WHAT WE DO</h2>
+        <For each='paragraph' of={about}>
+          <p> {paragraph} </p>
+        </For>
+      </BlockOne>
+        
+      <PosterBlock image={image6}/>
+      <ProductsBlock image1={image1} image2={image2} />
+    </PageTemplate>
   )
 }
 

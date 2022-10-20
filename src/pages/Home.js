@@ -12,12 +12,10 @@ import image1 from '../images/556.jpg';
 import image2 from '../images/557.jpg';
 import image6 from '../images/112.png';
 
-import HomePageContext from "../contexts/HomePageContext";
-
 
 function Cart() {
   return (
-    <HomePageContext>
+    <>
       <Wrapper>
         <Hero />
         <QuickAccess />
@@ -28,7 +26,7 @@ function Cart() {
         <TestimonyBlock />
       </Wrapper>
       <FooterBlock />
-    </HomePageContext>
+    </>
   )
 }
 

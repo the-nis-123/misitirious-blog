@@ -22,7 +22,7 @@ const HeroSlider = () => {
 
     <Hero>
       <Section>
-        <h4>QUALITY UNMATCHED</h4>
+        <h4>unmatched quality</h4>
           <h1>Elegant, Slick,<br/> and Trending</h1>
           <p>
             Every day and all year round walk out of your
@@ -108,6 +108,7 @@ const Section = styled.section`
 
  h4{
   color: purple;
+  text-transform:uppercase;
  }
 
  section{
