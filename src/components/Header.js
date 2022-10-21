@@ -46,6 +46,7 @@ const Section  = styled.div`
     margin-right: 15px;
     text-decoration: none;
     white-space: nowrap;
+    font-family: 'Noto Sans Vai', sans-serif;
   }
 
   h2{

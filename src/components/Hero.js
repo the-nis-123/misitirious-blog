@@ -102,8 +102,9 @@ const Section = styled.section`
   }
 
  h1{
-  font-size: 3em;
+  font-size: 4em;
   margin:10px 0;
+  font-family: 'Lobster Two';
  }
 
  h4{

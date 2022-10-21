@@ -21,6 +21,8 @@ export default FooterAbout;
 
 const Wrapper = styled.section`
   background-color: inherit;
+  font-family: 'Noto Sans Vai', sans-serif;
+
   p{
     padding: 7px 0;
   }

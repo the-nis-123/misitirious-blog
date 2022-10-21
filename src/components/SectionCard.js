@@ -39,6 +39,7 @@ export default SectionCard;
 const Section = styled.div`
   border-radius: 5px;
   background-color: inherit;
+  font-family: 'Noto Sans Vai', sans-serif;
 
   @media screen and (max-width: 720px) {
     width: 100%;

@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   height: auto;
   padding: 20px;
   border-radius: 5px;
+  font-family: 'Noto Sans Vai', sans-serif;
 
   section{
     margin-bottom: 10px;

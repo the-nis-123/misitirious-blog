@@ -26,6 +26,7 @@ const Wrapper = styled.div`
   display:flex;
   height: 100px;
   overflow: hidden;
+  font-family: 'Noto Sans Vai', sans-serif;
 
   strong{
     white-space: nowrap;

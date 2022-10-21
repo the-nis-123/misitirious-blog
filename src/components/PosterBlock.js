@@ -76,6 +76,7 @@ const Wrapper = styled.section`
   background-repeat:no-repeat;
   background-position: center;
   position: relative;
+  font-family: 'Noto Sans Vai', sans-serif;
 
    @media screen and (max-width: 960px) {
     max-width: 100vw;

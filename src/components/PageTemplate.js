@@ -38,6 +38,7 @@ const PageTemplate = styled.div`
 
   padding: 20px 30px;
   background-color: white;
+  font-family: 'Noto Sans Vai', sans-serif;
 `
 
 const Image = styled.div`
