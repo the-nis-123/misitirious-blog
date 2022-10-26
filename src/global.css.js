@@ -8,6 +8,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html{
+    scroll-behavior: smooth;
+  }
+
   #root{
     font-family: 'Signika';
     min-height: 100vh;

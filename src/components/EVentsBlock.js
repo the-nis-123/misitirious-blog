@@ -81,18 +81,15 @@ const Card = styled.div`
 `
 
 const Video = styled.video`
-  width: 95%;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
+  width: 100%;
+  aspect-ratio: 16/9;
 `
-
 
 const Overlay = styled.section`
   position: absolute;
   top: 0;
-  height: 100%;
   width: 100%;
+  aspect-ratio: 16/9;
   opacity: 0.2;
   background-color: darkcyan;
   z-index:1;

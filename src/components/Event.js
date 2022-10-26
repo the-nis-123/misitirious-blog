@@ -5,8 +5,9 @@ const Event = ({name, image}) => {
   return (
     <Wrapper>
       <EventImage src={image} alt='' />
+
       <section>
-        <h4>{ name }</h4>
+        <h5>{ name }</h5>
         <strong>Date: , Venue: </strong>
         <p>
           I know it and I love it, but I haven’t always
@@ -26,7 +27,6 @@ const Wrapper = styled.div`
   display:flex;
   height: 100px;
   overflow: hidden;
-  font-family: 'Noto Sans Vai', sans-serif;
 
   strong{
     white-space: nowrap;
