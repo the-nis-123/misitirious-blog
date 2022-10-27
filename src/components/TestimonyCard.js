@@ -20,6 +20,7 @@ const Wrapper = styled.div`
   padding: 20px;
   border-radius: 5px;
   font-family: 'Noto Sans Vai', sans-serif;
+  text-align: center;
 
   section{
     margin-bottom: 10px;
@@ -37,8 +38,8 @@ const Wrapper = styled.div`
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 4;
-      line-clamp: 5; 
+      -webkit-line-clamp: 3;
+      line-clamp: 4; 
     }
   }
 `

@@ -18,6 +18,9 @@ export default createGlobalStyle`
     width: 100%;
     overflow-y: auto;
     background-color: #f2f2f2;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
   }
 
   ::-webkit-scrollbar{
