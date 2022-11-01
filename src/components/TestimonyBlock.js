@@ -64,10 +64,5 @@ const Testify = styled.div`
       text-align: center;
     }
   }
-
-  @media screen and (max-width: 680px) {
-    max-width: 100vw;
-    grid-template-columns: repeat(2, 1fr);
-  }
 `
 

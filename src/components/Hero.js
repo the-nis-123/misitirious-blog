@@ -53,22 +53,13 @@ const Slider = styled.div`
   grid-area: header;
   background-color: inherit;
   display:flex;
+  align-items: center;
   padding: 0 30px;
   position: relative;
-
-  @media screen and (max-width: 960px) {
-    max-width: 100vw;
-  }
 `
 
 const Image = styled.img`
   height: 100%;
-
-  @media screen and (max-width: 960px) {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-  }
 `
 
 const Hero = styled.div`
@@ -79,23 +70,9 @@ const Hero = styled.div`
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  
-  @media screen and (max-width: 960px) {
-    width: 100%;
-    flex-flow: column;
-    text-align:center;
-  }
 `
 
 const Section = styled.section`
-   @media screen and (max-width: 960px) {
-    width: 100%;
-    padding: 20px 0;
-    position: absolute;
-    top:0;
-    z-index: 2;
-  }
-
  h1{
   font-size: 4em;
   margin:10px 0;
@@ -111,13 +88,8 @@ const Section = styled.section`
   display: flex;
   gap: 30px;
   margin-top: 25px;
-
-  @media screen and (max-width: 960px) {
-    justify-content: center;
-  }
  }
 `
-
 
 const Overlay = styled.section`
   position: absolute;
@@ -129,8 +101,4 @@ const Overlay = styled.section`
   background-color: darkgray;
   z-index:1;
   display: none;
-
-  @media screen and (max-width: 960px) {
-    display: block;
-  }
 `

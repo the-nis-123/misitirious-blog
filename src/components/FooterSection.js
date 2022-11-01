@@ -26,13 +26,4 @@ const Wrapper = styled.section`
   p{
     padding: 7px 0;
   }
-
-  h3{
-    color: red;
-  }
-
-   @media screen and (max-width: 600px) {
-    margin: 0 auto;
-    text-align:center;
-  }
 `

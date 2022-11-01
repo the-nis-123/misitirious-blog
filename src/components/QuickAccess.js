@@ -36,13 +36,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   gap: 20px;
-
-  @media screen and (max-width: 680px) {
-    display: grid;
-    max-width: 100vw;
-    grid-template-columns:repeat(2, 1fr);
-    padding: 30px;
-  }
 `
 
 const Section = styled.section`

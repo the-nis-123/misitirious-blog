@@ -17,33 +17,16 @@ function Cart() {
 
   return (
     <>
-      <Wrapper>
-        <Hero />
-        <QuickAccess />
-        <PosterBlock  image={image6}/>
-        <LandingPageWidget data={events} />
-        <EventsBlock />
-        <PartnersBlock />
-        <TestimonyBlock />
-      </Wrapper>
+      <Hero />
+      <QuickAccess />
+      <PosterBlock  image={image6}/>
+      <LandingPageWidget data={events} />
+      <EventsBlock />
+      <PartnersBlock />
+      <TestimonyBlock />
       <FooterBlock />
     </>
   )
 }
 
 export default Cart;
-
-const Wrapper = styled.div`
-  display: grid;
-  grid-template-areas:
-  'header header header header header header'
-  'quick quick quick quick quick quick'
-  'poster poster poster poster poster poster'
-  'services services services services services services'
-  'main main main main main main'
-  'partners partners partners partners partners partners'
-  'left left menu menu menu menu'
-  'testify testify testify testify testify testify';
-
-  gap: 20px;
-`

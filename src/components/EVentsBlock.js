@@ -52,11 +52,6 @@ const Events = styled.div`
   grid-template-columns: 1.4fr 1fr;
   background-color: inherit;
   gap: 25px;
-
-  @media screen and (max-width: 720px) {
-    max-width: 100vw;
-    grid-template-columns: 1fr;
-  }
 `
 
 const Card = styled.div`

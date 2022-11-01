@@ -55,11 +55,6 @@ const Wrapper = styled.section`
   padding: 20px 0;
   background-color: white;
   gap: 20px;
-   
-  @media screen and (max-width: 960px) {
-    max-width: 100vw;
-    grid-template-columns: 1fr;
-  }
 `
 
 const Service = styled(Wrapper)`

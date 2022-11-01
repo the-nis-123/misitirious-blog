@@ -45,10 +45,4 @@ const Partners = styled.section`
   gap: 20px;
   grid-area: partners;
   padding: 20px 0;
-
-  @media screen and (max-width: 680px) {
-    max-width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 `

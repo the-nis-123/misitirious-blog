@@ -42,15 +42,6 @@ const Section = styled.section`
   grid-template-columns: repeat(4,1fr);
   gap: 20px;
   padding: 40px 0;
-
-  @media screen and (max-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-  }
-
-  @media screen and (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
 `
 
 const LowerSection = styled.section`
@@ -59,9 +50,5 @@ const LowerSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-   @media screen and (max-width: 600px) {
-   flex-flow:column;
-  }
 `
 
