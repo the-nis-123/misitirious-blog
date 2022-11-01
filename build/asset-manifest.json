@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/misitirious-blog/static/js/main.99768d3c.js",
+    "main.js": "/misitirious-blog/static/js/main.1f77a1e0.js",
     "static/js/787.91e82504.chunk.js": "/misitirious-blog/static/js/787.91e82504.chunk.js",
     "static/media/559.jpg": "/misitirious-blog/static/media/559.c17260acfa9c53eba2f8.jpg",
     "static/media/932.jpg": "/misitirious-blog/static/media/932.55acfe8e9831a2241001.jpg",
@@ -14,10 +14,10 @@
     "static/media/112.png": "/misitirious-blog/static/media/112.09d0ff7f117e528ed61d.png",
     "static/media/logo.png": "/misitirious-blog/static/media/logo.1cf82fa22873038539dd.png",
     "index.html": "/misitirious-blog/index.html",
-    "main.99768d3c.js.map": "/misitirious-blog/static/js/main.99768d3c.js.map",
+    "main.1f77a1e0.js.map": "/misitirious-blog/static/js/main.1f77a1e0.js.map",
     "787.91e82504.chunk.js.map": "/misitirious-blog/static/js/787.91e82504.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.99768d3c.js"
+    "static/js/main.1f77a1e0.js"
   ]
 }

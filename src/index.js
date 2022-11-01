@@ -1,6 +1,6 @@
 
 import {StrictMode} from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import AppRoutes from './AppRoutes';
 import reportWebVitals from './reportWebVitals';
@@ -11,13 +11,13 @@ import  AppContextProvider  from './contexts/AppContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <AppContextProvider>
           <AppRoutes /> 
         </AppContextProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
 
