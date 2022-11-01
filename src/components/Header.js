@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import logo from '../logo.png';
-import Button from './Button';
 
 const Header = () => {
   return (
@@ -18,7 +17,12 @@ const Header = () => {
           <Link to='/events'>Events</Link>
           <Link to='/about'>About Us</Link>
         </section>
-        <Button to='/'>Shop Now</Button>
+
+        <a className='header-button'
+          href='https://the-nis-123.github.io/misitirious/'
+          target="_blank" 
+          rel="noopener noreferrer"
+        >Shop Now</a>
       </Section>
     </Wrapper>
   )
@@ -49,6 +53,15 @@ const Section  = styled.div`
     white-space: nowrap;
     font-family: 'Noto Sans Vai', sans-serif;
     color: purple;
+  }
+
+  .header-button{
+    display: inline-lock;
+    padding: 7px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
   }
 
   h2{

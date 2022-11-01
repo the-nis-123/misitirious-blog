@@ -2,6 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 
 export default createGlobalStyle`
+  :root{
+    --primary-color: #ff0000;
+    --main-background-color: #fafafa;
+    --secondary-color: #ffffff;
+    --primary-icons-color: #ffffff;
+    --secondary-icons-color: #ffffff;
+  }
+
   *,::before, ::after{
     margin: 0;
     padding: 0;

@@ -1,14 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const Button = ({children, to}) => {
-  return (
-    <MyButton to={to} >{children}</MyButton>
-  )
-}
-
-export default Button;
-
 
 export const RoundedButton = ({children, to}) => {
   return (
@@ -27,15 +19,13 @@ export const RoundButtonWhite = ({children, to}) => {
   )
 }
 
-const MyButton = styled(Link)`
+const RoundButton = styled(Link)`
   display: inline-lock;
   padding: 7px 20px;
-  background-color: red;
-  color: white !important;
+  background-color:  var(--primary-color);
+  color: white;
   text-decoration: none;
   white-space: nowrap;
-`
-const RoundButton = styled(MyButton)`
   border-radius: 20px;
   display: inline-block;
 `
@@ -44,5 +34,5 @@ const RoundButton = styled(MyButton)`
 const WhiteButton = styled(RoundButton)`
   background-color: white;
   color: red;
-  border: 1px solid red;
+  border: 1px solid  var(--primary-color);
 `
