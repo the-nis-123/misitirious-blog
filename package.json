@@ -2,6 +2,7 @@
   "name": "misitirious-blog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://the-nis-123.github.io/misitirious-blog",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
@@ -23,7 +24,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint --ext .jsx,.js src",
     "lint:fix": "eslint --ext .jsx,.js --fix src",
-    "prettify": "prettier --write **/*.{js,jsx,json}"
+    "prettify": "prettier --write **/*.{js,jsx,json}",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "husky": {
     "hooks": {
@@ -52,6 +55,7 @@
   "devDependencies": {
     "babel-plugin-jsx-control-statements": "^4.1.2",
     "customize-cra": "^1.0.0",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "react-app-rewired": "^2.2.1"
   }
