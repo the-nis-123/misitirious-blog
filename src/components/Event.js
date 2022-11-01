@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Event = ({name, image}) => {
   return (
     <Wrapper>
-      <EventImage src={image} alt='' />
+      <EventImage style={{backgroundImage: `url(${image})`}} />
 
       <section>
         <h5>{ name }</h5>
@@ -38,8 +38,11 @@ const Wrapper = styled.div`
   }
 `
 
-const EventImage = styled.img`
+const EventImage = styled.div`
   height: 100%;
-  width: 120px;
+  width: 220px;
   margin-right: 15px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `
