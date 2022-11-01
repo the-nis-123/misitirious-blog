@@ -4,11 +4,7 @@ import image from '../images/932.jpg';
 import PosterBlock from "../components/PosterBlock";
 import AboutWidget from "../components/PostWidget";
 import useDummyText from "../hooks/useDummyText";
-
-
-import image1 from '../images/556.jpg';
-import image2 from '../images/557.jpg';
-import image6 from '../images/112.png';
+import image1 from '../images/862.jpg'
 
 
 const Products = () => {
@@ -23,8 +19,8 @@ const Products = () => {
         </For>
       </BlockOne>
 
-      <PosterBlock image={image6}/>
-      <AboutWidget image1={image1} image2={image2} />
+      <PosterBlock image={image1}/>
+      <AboutWidget image1={image1} image2={image} />
       
     </PageTemplate>
   )

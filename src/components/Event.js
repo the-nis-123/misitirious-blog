@@ -25,7 +25,7 @@ export default Event;
 const Wrapper = styled.div`
   margin-bottom: 15px;
   display:flex;
-  height: 100px;
+  height: 95px;
   overflow: hidden;
 
   strong{
@@ -40,6 +40,6 @@ const Wrapper = styled.div`
 
 const EventImage = styled.img`
   height: 100%;
-  width: auto;
+  width: 120px;
   margin-right: 15px;
 `

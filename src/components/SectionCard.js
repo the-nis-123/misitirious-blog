@@ -40,12 +40,8 @@ const Section = styled.div`
   border-radius: 5px;
   background-color: inherit;
   font-family: 'Noto Sans Vai', sans-serif;
-
-  @media screen and (max-width: 720px) {
-    width: 100%;
-    height:auto;
-  }
-
+  flex: 50%;
+  
   section{
     margin-bottom: 10px;
 

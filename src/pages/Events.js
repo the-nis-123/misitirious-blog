@@ -5,10 +5,8 @@ import PosterBlock from "../components/PosterBlock";
 import EventWidget from "../components/PostWidget";
 import useDummyText from "../hooks/useDummyText";
 
+import image from '../images/862.jpg';
 
-import image1 from '../images/556.jpg';
-import image3 from '../images/557.jpg';
-import image6 from '../images/112.png';
 
 
 const intro = `
@@ -33,8 +31,8 @@ const Products = () => {
         </For>
       </BlockOne>
 
-      <PosterBlock image={image6}/>
-      <EventWidget image1={image1} image2={image3} />
+      <PosterBlock image={image}/>
+      <EventWidget image1={image} image2={image} />
     </PageTemplate>
   )
 }

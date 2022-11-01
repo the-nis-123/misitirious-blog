@@ -1,15 +1,10 @@
 import styled from "styled-components";
 import PageTemplate from '../components/PageTemplate';
-import image from '../images/862.jpg'
 import PosterBlock from "../components/PosterBlock";
 import ProductsBlock from "../components/PostWidget";
 import useDummyText from "../hooks/useDummyText";
 
-
-import image1 from '../images/556.jpg';
-import image2 from '../images/557.jpg';
-import image6 from '../images/112.png';
-
+import image from '../images/862.jpg';
 
 const intro = `
   In this tutorial Python will be written in a text editor.
@@ -33,8 +28,8 @@ const Products = () => {
         </For>
       </BlockOne>
         
-      <PosterBlock image={image6}/>
-      <ProductsBlock image1={image1} image2={image2} />
+      <PosterBlock image={image}/>
+      <ProductsBlock image1={image} image2={image} />
     </PageTemplate>
   )
 }

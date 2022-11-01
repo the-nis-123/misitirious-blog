@@ -1,8 +1,4 @@
 import styled from "styled-components";
-import image1 from '../images/911.jpg';
-import image2 from '../images/753.jpg';
-import image3 from '../images/557.jpg';
-import image4 from '../images/9453.jpg';
 
 import useHomeContext from '../hooks/useAppContext';
 import useDummyText from '../hooks/useDummyText';
@@ -25,10 +21,11 @@ const EventsBlock = () => {
         </Card>
 
         <Card>
-          <Event name='MISITIRIOUS ESSENTIALS' image={image1} />
-          <Event name='THE RUNWAY' image={image2}/>
-          <Event name='MUSIC, WINES and FASHION' image={image3}/>
-          <Event name='ANNUAL FASHION GALA' image={image4} />
+          <If condition={events?.data}>
+            <For each='item' of={events.data.events}>
+              <Event name={item.name} image={item.images[0]} />
+            </For>
+          </If>
         </Card>
       </Events>
     </Wrapper>
@@ -65,11 +62,6 @@ const Events = styled.div`
 const Card = styled.div`
   width: 100%;
   position: relative;
-  
-  @media screen and (max-width: 720px) {
-    max-width: 100vw;
-  }
-
 
   h3{
     color: red;

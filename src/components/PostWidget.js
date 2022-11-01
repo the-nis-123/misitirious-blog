@@ -1,17 +1,23 @@
 import styled from "styled-components";
 import SectionCard from "./SectionCard";
 import useHomeContext from '../hooks/useAppContext';
-import useDummyText from '../hooks/useDummyText';
 
-const PostWidget = ({image1, image2}) => {
-  const {gallery} = useHomeContext();
-  console.log(gallery);
+const PostWidget = () => {
+  const {events} = useHomeContext();
+  console.log(events);
 
   return (
     <Wrapper>
-      <If condition={gallery?.data}>
-        <SectionCard image={gallery.data[0]} name='Beauty, Fragrance reading'/>
-        <SectionCard image={gallery.data[1]} name='Apparrel simplified to improve'/>
+      <If condition={events?.data}>
+        <SectionCard 
+          image={events.data.events[0].images[2]} 
+          name={events.data.events[0].name}
+        />
+
+        <SectionCard 
+          image={events.data.events[1].images[3]} 
+          name={events.data.events[1].name}
+        />
       </If>
     </Wrapper>
   )
@@ -21,14 +27,21 @@ export default PostWidget;
 
 
 
-export const LandingPageWidget = ({image1, image2}) => {
-  const {gallery} = useHomeContext();
+export const LandingPageWidget = () => {
+  const {events} = useHomeContext();
 
   return (
     <Service>
-      <If condition={gallery?.data}>
-        <SectionCard image={gallery.data[0]} name='Beauty, Fragrance reading'/>
-        <SectionCard image={gallery.data[1]} name='Apparrel simplified to improve'/>
+      <If condition={events?.data}>
+        <SectionCard 
+          image={events.data.events[2].images[2]} 
+          name={events.data.events[2].name}
+        />
+
+        <SectionCard 
+          image={events.data.events[3].images[3]} 
+          name={events.data.events[3].name}
+        />
       </If>
     </Service>
   )

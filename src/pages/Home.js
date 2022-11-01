@@ -7,20 +7,21 @@ import EventsBlock from "../components/EVentsBlock";
 import PartnersBlock from "../components/PartnersBlock";
 import { LandingPageWidget } from "../components/PostWidget";
 import PosterBlock from "../components/PosterBlock";
+import useHomeContext from '../hooks/useAppContext';
 
-import image1 from '../images/556.jpg';
-import image2 from '../images/557.jpg';
-import image6 from '../images/112.png';
+import image6 from '../images/862.jpg';
 
 
 function Cart() {
+  const {events} = useHomeContext();
+
   return (
     <>
       <Wrapper>
         <Hero />
         <QuickAccess />
         <PosterBlock  image={image6}/>
-        <LandingPageWidget image1={image1} image2={image2} />
+        <LandingPageWidget data={events} />
         <EventsBlock />
         <PartnersBlock />
         <TestimonyBlock />
