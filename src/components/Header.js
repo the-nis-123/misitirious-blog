@@ -34,7 +34,8 @@ const Wrapper  = styled.header`
   display:flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #d9d8dd;
+  position: sticky;
+  top:0;
 `
 
 const Section  = styled.div`
@@ -47,16 +48,11 @@ const Section  = styled.div`
     text-decoration: none;
     white-space: nowrap;
     font-family: 'Noto Sans Vai', sans-serif;
+    color: purple;
   }
 
   h2{
     white-space: nowrap;
-  }
-
-  @media screen and (max-width: 960px) {
-    h2,a{
-      display: none;
-    }
   }
 `
 

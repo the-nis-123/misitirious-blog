@@ -6,14 +6,15 @@ import useDummyText from '../hooks/useDummyText';
 const TestimonyBlock = () => {
   const {comments} = useAppContext();
   const message = useDummyText(1);
+  console.log(comments);
   
   return (
     <Wrapper>
       <h2>Word on the street about us</h2>
        
       <Testify>
-        <If condition={comments?.data}>
-          <For each='comment' of={comments.data}>
+        <If condition={comments.data}>
+          <For each='comment' of={comments.data.users}>
             <TestimonyCard 
             name={comment.username} 
             job={comment.job}

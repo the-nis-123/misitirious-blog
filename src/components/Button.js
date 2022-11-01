@@ -31,7 +31,7 @@ const MyButton = styled(Link)`
   display: inline-lock;
   padding: 7px 20px;
   background-color: red;
-  color: white;
+  color: white !important;
   text-decoration: none;
   white-space: nowrap;
 `
