@@ -21,12 +21,12 @@ export const RoundButtonWhite = ({children, to}) => {
 
 const RoundButton = styled(Link)`
   display: inline-lock;
-  padding: 7px 20px;
+  padding: 0.9em 2em;
   background-color:  var(--primary-color);
   color: white;
   text-decoration: none;
   white-space: nowrap;
-  border-radius: 20px;
+  border-radius: 2em;
   display: inline-block;
 `
 

@@ -16,7 +16,7 @@ function Cart() {
   const {events} = useHomeContext();
 
   return (
-    <>
+    <Wrapper>
       <Hero />
       <QuickAccess />
       <PosterBlock  image={image6}/>
@@ -25,8 +25,14 @@ function Cart() {
       <PartnersBlock />
       <TestimonyBlock />
       <FooterBlock />
-    </>
+    </Wrapper>
   )
 }
 
 export default Cart;
+
+
+const Wrapper = styled.div`
+  width: 100%;
+  height: calc(100% - 6em);
+`

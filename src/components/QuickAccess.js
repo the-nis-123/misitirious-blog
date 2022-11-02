@@ -22,7 +22,7 @@ export default QuickAccess;
 const IconWithStyles = ( {Icon, phrase, def} ) => {
   return (
     <Section>
-      <Icon size='50px' style={{ color: '#de9c9d' }} />
+      <Icon size='5em' style={{ color: '#de9c9d' }} />
       <h2>{phrase}</h2>
       <p>{def}</p>
     </Section>
@@ -31,7 +31,7 @@ const IconWithStyles = ( {Icon, phrase, def} ) => {
 
 const Wrapper = styled.div`
   grid-area: quick;
-  padding: 50px 0;
+  padding: 3em 0;
   background-color: white;
   display: grid;
   gap: 20px;

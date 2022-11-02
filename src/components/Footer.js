@@ -34,19 +34,19 @@ export default FooterBlock;
 
 const Wrapper = styled.footer`
   background-color: #c8c8c8;
-  padding: 0 30px;
+  padding: 0 1em;
 `
 
 const Section = styled.section`
   display: grid;
-  gap: 20px;
-  padding: 40px 0;
+  gap: 1em;
+  padding: 2em 0;
   text-align: center;
 `
 
 const LowerSection = styled.section`
   border-top: solid 1px grey;
-  padding: 20px 0;
+  padding: 1em 0;
   display: flex;
   align-items: center;
   justify-content: space-between;

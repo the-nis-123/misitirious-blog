@@ -4,55 +4,48 @@ import FooterBlock from "../components/Footer";
 
 function Cart({children, image, title, intro}) {
   return (
-    <>
-      <PageTemplate>
-        <Head>
-          <h2>{title}</h2>
-          <If condition={intro !== undefined}>
-            <For each='paragraph' of={intro}>
-              <p> {paragraph} </p>
-            </For>
-          </If>
-        </Head>
+    <PageTemplate>
+      <Head>
+        <h2>{title}</h2>
+        <If condition={intro !== undefined}>
+          <For each='paragraph' of={intro}>
+            <p> {paragraph} </p>
+          </For>
+        </If>
+      </Head>
 
-        <Image style={{backgroundImage:`url(${image})`}}/>
-      
-        { children }
+      <Image style={{backgroundImage:`url(${image})`}}/>
+    
+      { children }
 
-      </PageTemplate>
       <FooterBlock />
-    </>
+    </PageTemplate>
   )
 }
 
 export default Cart;
 
 const PageTemplate = styled.div`
-  display: grid;
-  grid-template-areas:
-  'title title title title title title'
-  'image image image image image image'
-  'header header header header header header'
-  'poster poster poster poster poster poster'
-  'services services services services services services';
-
-  padding: 20px 30px;
+  width: 100%;
+  height: calc(100% - 6em);
   background-color: white;
   font-family: 'Noto Sans Vai', sans-serif;
 `
 
 const Image = styled.div`
   grid-area: image;
-  height: 300px;
+  height: 35vh;
   background-repeat: no-repeat;
   background-origin: content-box;
   background-size: cover;
   background-position: center;
+  width: calc(100% - 2em);
+  margin: 0 auto;
 `
 
 const Head = styled.div`
  grid-area: title;
- padding: 10px 0;
+ padding: 1em;
 
  h2{
   text-transform: uppercase;

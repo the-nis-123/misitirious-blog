@@ -32,14 +32,15 @@ export default Header;
 
 const Wrapper  = styled.header`
   width: 100%;
-  padding: 10px 0;
-  height: 70px;
+  padding: 0.5em;
+  height: 6em;
   background-color: white;
   display:flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  top:0;
+  top: 0;
+  z-index: 5;
 `
 
 const Section  = styled.div`
@@ -57,7 +58,7 @@ const Section  = styled.div`
 
   .header-button{
     display: inline-lock;
-    padding: 7px 20px;
+    padding: 0.8em 2em;
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
@@ -70,7 +71,7 @@ const Section  = styled.div`
 `
 
 const Logo  = styled.img`
-  width:60px;
+  width: 4em;
   height: auto;
-  margin-right: 10px;
+  margin-right: 1em;
 `

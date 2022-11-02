@@ -41,7 +41,6 @@ export default Products;
 
 
 const BlockOne = styled.div`
- grid-area: header;
- padding: 15px 0;
+ padding: 1em;
  background-color: inherit;
 `

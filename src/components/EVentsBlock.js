@@ -39,10 +39,10 @@ export default EventsBlock;
 const Wrapper = styled.div`
   grid-area: main;
   background-color: inherit;
-  padding: 0 20px;
+  padding: 0 1em;
 
   h2{
-    padding: 10px 0;
+    padding: 0.5em 0;
   }
 `
 
@@ -50,7 +50,7 @@ const Events = styled.div`
   display: grid;
   grid-area: main;
   background-color: inherit;
-  gap: 25px;
+  gap: 1em;
 `
 
 const Card = styled.div`
@@ -75,7 +75,7 @@ const Overlay = styled.section`
   position: absolute;
   top: 0;
   width: 100%;
-  aspect-ratio: 16/9;
+  height: 100%;
   opacity: 0.2;
   background-color: darkcyan;
   z-index:1;

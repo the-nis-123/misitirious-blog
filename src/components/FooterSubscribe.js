@@ -10,7 +10,7 @@ import { GithubWithCircle } from '@styled-icons/entypo-social/GithubWithCircle';
 const FooterSubscribe = () => {
   return (
     <Wrapper>
-      <h2>MISITIRIOUS BLOG</h2>
+      <h2>MISITIRIOUS</h2>
 
       <p>
         Subscribe to our news letter and
@@ -37,10 +37,6 @@ const FooterSubscribe = () => {
           <TwitterWithCircle />
         </a>
 
-        <a href='https://github.com/the-nis-123'  target="_blank" rel="noopener noreferrer">
-          <GithubWithCircle />
-        </a>
-
         <a href='https://www.linkedin.com/in/kintu-denis/'  target="_blank" rel="noopener noreferrer">
           <LinkedinWithCircle />
         </a>
@@ -54,22 +50,12 @@ export default FooterSubscribe;
 const Wrapper = styled.section`
   background-color: white;
   text-align: center;
-  padding: 20px;
-  border-radius: 5px;
+  padding: 1em;
+  border-radius: 0.4em;
+  width: 100%;
 
  h2{
-    margin-bottom: 15px;
-  }
-
-  @media screen and (max-width: 600px) {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  
-  @media screen and (max-width: 480px) {
-    width: 100%;
-    margin: 0 auto;
+    margin-bottom: 1em;
   }
 `
 
@@ -97,7 +83,7 @@ const FooterIcons = styled.section`
     text-decoration: none;
 
     svg{
-    width: 30px;
+    width: 3rem;
     height: auto;
     margin-right: 15px;
 

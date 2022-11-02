@@ -26,9 +26,9 @@ export default PosterBlock;
 
 const Wrapper = styled.section`
   grid-area: poster;
-  padding: 20px 0;
+  padding: 1em 0;
   background-color: black;
-  gap: 20px;
+  gap: 2em;
   height: auto;
   background-size: cover;
   background-repeat:no-repeat;
@@ -39,7 +39,7 @@ const Wrapper = styled.section`
   section{
     flex: 50%;
     z-index: 2;
-    padding: 0 30px;
+    padding: 0 1em;
     max-height: 60vh;
     overflow: hidden;    
 

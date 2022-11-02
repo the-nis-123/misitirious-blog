@@ -50,11 +50,11 @@ export const LandingPageWidget = () => {
 
 const Wrapper = styled.section`
   grid-area: services;
-  padding: 20px 0;
+  padding: 1em ;
   background-color: white;
-  gap: 20px;
+  gap: 2em;
 `
 
 const Service = styled(Wrapper)`
-  padding: 20px 30px;
+  padding: 1em;
 `

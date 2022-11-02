@@ -18,15 +18,25 @@ export default createGlobalStyle`
 
   html{
     scroll-behavior: smooth;
+    font-size:100%;
   }
 
+  body{
+    font-family: 'Sora', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  
   #root{
     font-family: 'Signika';
-    min-height: 100vh;
-    width: 100%;
-    overflow-y: auto;
     background-color: #f2f2f2;
     user-select: none; 
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
   }
 
   ::-webkit-scrollbar{
@@ -38,5 +48,6 @@ export default createGlobalStyle`
     display: none;
   }
 `;
+
 
 

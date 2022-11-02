@@ -52,7 +52,7 @@ const Image = styled.img`
 const Hero = styled.div`
   background-color: inherit;
   position: relative;
-  padding: 20px;
+  padding: 1em 0;
   text-align: center;
   
   .buttons{
