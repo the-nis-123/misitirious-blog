@@ -62,8 +62,8 @@ const Wrapper = styled.section`
 const Input = styled.input`
   display: block;
   width: 90%;
-  margin: 10px auto;
-  padding: 15px;
+  margin: 0.6em auto;
+  padding: 1.2em 2em;
   outline: none;
   border:  none;
   background-color: #c8c8c8;
