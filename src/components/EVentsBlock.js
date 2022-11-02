@@ -49,7 +49,6 @@ const Wrapper = styled.div`
 const Events = styled.div`
   display: grid;
   grid-area: main;
-  grid-template-columns: 1.4fr 1fr;
   background-color: inherit;
   gap: 25px;
 `

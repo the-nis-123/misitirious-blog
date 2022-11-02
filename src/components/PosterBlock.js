@@ -25,7 +25,6 @@ const PosterBlock = () => {
 export default PosterBlock;
 
 const Wrapper = styled.section`
-  display: flex;
   grid-area: poster;
   padding: 20px 0;
   background-color: black;

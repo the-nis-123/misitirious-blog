@@ -39,7 +39,6 @@ const Wrapper = styled.footer`
 
 const Section = styled.section`
   display: grid;
-  grid-template-columns: repeat(4,1fr);
   gap: 20px;
   padding: 40px 0;
 `

@@ -39,9 +39,9 @@ const Wrapper = styled.div`
 
 
 const Partners = styled.section`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: inherit;
-  display: flex;
-  justify-content: space-evenly;
   gap: 20px;
   grid-area: partners;
   padding: 20px 0;

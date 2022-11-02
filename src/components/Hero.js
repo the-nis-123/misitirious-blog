@@ -4,14 +4,9 @@ import image from '../images/5.png';
 import SideBarIcons from "./SideBarIcons";
 import { RoundedButton, RoundButtonWhite } from "./Button";
 
-import { TwitterWithCircle } from '@styled-icons/entypo-social/TwitterWithCircle';
-import { InstagramWithCircle } from '@styled-icons/entypo-social/InstagramWithCircle';
-import { LinkedinWithCircle } from '@styled-icons/entypo-social/LinkedinWithCircle';
-import { FacebookWithCircle } from '@styled-icons/entypo-social/FacebookWithCircle';
-
 const HeroSlider = () => {
   return (
-  <Slider>
+  <Slider style={{backgroundImage: `url(${image})`}}>
     <Overlay />    
     <SideBarIcons />
 
@@ -24,7 +19,7 @@ const HeroSlider = () => {
             door feeling like <br /> that King, that Queen you were always meant to be.
             <br/> You can't get it wrong with MISITIRIOUS
           </p>  
-          <section>
+          <section className="buttons">
             <RoundedButton to='/'>Order Now</RoundedButton>
 
             <RoundButtonWhite to='/about'>
@@ -33,7 +28,7 @@ const HeroSlider = () => {
           </section>
       </Section>
         
-      <Image src={image} alt='' />
+      <Image src={image} alt='' className="hide-on-small-screens"/>
     </Hero>
   </Slider>
   )
@@ -42,16 +37,8 @@ const HeroSlider = () => {
 export default HeroSlider;
 
 
-const IconWithStyles = ( Icon ) => {
-  return (
-    <Icon size='25px' style={{color:'#594e47'}} />
-  )
-}
-
-
 const Slider = styled.div`
   grid-area: header;
-  background-color: inherit;
   display:flex;
   align-items: center;
   padding: 0 30px;
@@ -63,13 +50,14 @@ const Image = styled.img`
 `
 
 const Hero = styled.div`
-  width: calc(100% - 60px);
-  height: 60vh;
   background-color: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   position: relative;
+  padding: 20px;
+
+  .buttons{
+    display:flex;
+    justify-content:center;
+  }
 `
 
 const Section = styled.section`
@@ -82,6 +70,7 @@ const Section = styled.section`
  h4{
   color: purple;
   text-transform:uppercase;
+  text-align: center;
  }
 
  section{

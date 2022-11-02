@@ -7,11 +7,11 @@ const Header = () => {
     <Wrapper>
       <Section>
         <Logo src={logo} alt='' />
-        <h2>MISITIRIOUS</h2>
+        <h2  className='hide-on-small-screens'>MISITIRIOUS</h2>
       </Section>
       
       <Section>
-        <section style={{display:'flex', color:'purple'}}>
+        <section style={{color:'purple'}} className='hide-on-small-screens'>
           <Link to='/'>Home</Link>
           <Link to='/products'>Our Products</Link>
           <Link to='/events'>Events</Link>
@@ -32,7 +32,7 @@ export default Header;
 
 const Wrapper  = styled.header`
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 0;
   height: 70px;
   background-color: white;
   display:flex;

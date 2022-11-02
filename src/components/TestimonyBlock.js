@@ -45,7 +45,6 @@ const Wrapper = styled.div`
 
 const Testify = styled.div`
   display: grid;
-  grid-template-columns: repeat(5,1fr);
   background-color: inherit;
   gap: 10px;
   grid-area: footer;

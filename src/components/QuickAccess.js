@@ -33,8 +33,7 @@ const Wrapper = styled.div`
   grid-area: quick;
   padding: 50px 0;
   background-color: white;
-  display: flex;
-  justify-content: center;
+  display: grid;
   gap: 20px;
 `
 
