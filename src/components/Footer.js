@@ -41,6 +41,7 @@ const Section = styled.section`
   display: grid;
   gap: 20px;
   padding: 40px 0;
+  text-align: center;
 `
 
 const LowerSection = styled.section`

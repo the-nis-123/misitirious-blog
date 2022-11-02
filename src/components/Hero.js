@@ -8,7 +8,7 @@ const HeroSlider = () => {
   return (
   <Slider style={{backgroundImage: `url(${image})`}}>
     <Overlay />    
-    <SideBarIcons />
+    {/* <SideBarIcons /> */}
 
     <Hero>
       <Section>
@@ -53,7 +53,8 @@ const Hero = styled.div`
   background-color: inherit;
   position: relative;
   padding: 20px;
-
+  text-align: center;
+  
   .buttons{
     display:flex;
     justify-content:center;

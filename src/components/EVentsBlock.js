@@ -39,7 +39,7 @@ export default EventsBlock;
 const Wrapper = styled.div`
   grid-area: main;
   background-color: inherit;
-  padding: 0 30px;
+  padding: 0 20px;
 
   h2{
     padding: 10px 0;

@@ -35,6 +35,7 @@ const Wrapper = styled.div`
   background-color: white;
   grid-area: partners;
   padding:  30px;
+  text-align: center;
 `
 
 
