@@ -15,7 +15,7 @@ const FooterBlock = () => {
           
       <LowerSection>
         <section>
-          <span>&copy;{new Date().getFullYear()} Misitirious Inc.   </span>
+          <span>&copy;{new Date().getFullYear()} Misitirious Inc. </span>
           <span>All rights reserved.</span>
         </section>
 
