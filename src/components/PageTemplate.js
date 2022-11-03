@@ -27,7 +27,9 @@ export default Cart;
 
 const PageTemplate = styled.div`
   width: 100%;
-  height: calc(100% - 6em);
+  height: calc(100% - 5em);
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: white;
   font-family: 'Noto Sans Vai', sans-serif;
 `

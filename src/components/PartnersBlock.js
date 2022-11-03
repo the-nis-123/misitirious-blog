@@ -36,6 +36,10 @@ const Wrapper = styled.div`
   grid-area: partners;
   padding:  30px;
   text-align: center;
+
+  @media only screen and (min-width: 720px)  {
+    text-align: left;
+  }
 `
 
 
@@ -46,4 +50,9 @@ const Partners = styled.section`
   gap: 20px;
   grid-area: partners;
   padding: 20px 0;
+
+  @media only screen and (min-width: 720px)  {
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+  }
 `

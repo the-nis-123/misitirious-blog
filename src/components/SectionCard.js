@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SectionCard = ({image, name}) => {
   return (
     <Section>
-      <Image style={{ backgroundImage:`url(${image })`}} />
+      <Image src={ image } alt=''/>
       <section>
         <h3>{name }</h3>
          <p>
@@ -41,10 +41,9 @@ const Section = styled.div`
   background-color: inherit;
   font-family: 'Noto Sans Vai', sans-serif;
   flex: 50%;
+  padding: 2em 0;
   
   section{
-    margin-bottom: 10px;
-
     h3{
       color: #0a0e59;
       text-transform: uppercase;
@@ -60,11 +59,10 @@ const Section = styled.div`
 `
 
 
-const Image = styled.section`
+const Image = styled.img`
   width: 100%;
-  height: 300px;
-  margin: 0 auto;
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center;
+  height: 20em;
+  margin: 1em auto;
+  object-fit: cover;
+  object-position: center;
 `

@@ -47,10 +47,13 @@ const Wrapper = styled.div`
 `
 
 const Events = styled.div`
-  display: grid;
-  grid-area: main;
   background-color: inherit;
-  gap: 1em;
+
+  @media only screen and (min-width: 720px)  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
 `
 
 const Card = styled.div`
@@ -68,6 +71,7 @@ const Card = styled.div`
 
 const Video = styled.video`
   width: 100%;
+  height: 100%;
   aspect-ratio: 16/9;
 `
 

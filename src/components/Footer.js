@@ -42,6 +42,11 @@ const Section = styled.section`
   gap: 1em;
   padding: 2em 0;
   text-align: center;
+
+
+  @media only screen and (min-width: 720px)  {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `
 
 const LowerSection = styled.section`

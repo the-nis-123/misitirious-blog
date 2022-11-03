@@ -4,7 +4,7 @@ import { links } from "../other resources/social-links";
 
 const SideBarIcons = () => {
   return (
-    <Wrapper className='hide-on-small-screens'>
+    <Wrapper>
       <For each='link' of={links}>
         <a 
           href={link.link}
@@ -22,14 +22,18 @@ const SideBarIcons = () => {
 export default SideBarIcons;
 
 const Wrapper = styled.section`
-  height: 100%;
-  width: 60px;
-  background-color: inherit;
-  display: flex;
-  flex-flow: column;
-  align-items:center;
-  justify-content:center;
-  gap:20px;
+  display: none;
+
+  @media only screen and (min-width: 1000px)  {
+    height: 100%;
+    width: 4em;
+    background-color: inherit;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content:center;
+    gap:1em;
+  }
 
   a{
     text-decoration:none;

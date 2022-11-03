@@ -7,11 +7,11 @@ const Header = () => {
     <Wrapper>
       <Section>
         <Logo src={logo} alt='' />
-        <h2  className='hide-on-small-screens'>MISITIRIOUS</h2>
+        <h2>MISITIRIOUS</h2>
       </Section>
       
       <Section>
-        <section style={{color:'purple'}} className='hide-on-small-screens'>
+        <section style={{color:'purple'}} className='menu'>
           <Link to='/'>Home</Link>
           <Link to='/products'>Our Products</Link>
           <Link to='/events'>Events</Link>
@@ -32,8 +32,7 @@ export default Header;
 
 const Wrapper  = styled.header`
   width: 100%;
-  padding: 0.5em;
-  height: 6em;
+  height: 5em;
   background-color: white;
   display:flex;
   justify-content: space-between;
@@ -46,6 +45,15 @@ const Wrapper  = styled.header`
 const Section  = styled.div`
   display: flex;
   align-items:center;
+  h2{
+    display: none;
+  }
+
+  @media only screen and (min-width: 640px)  {
+    h2{
+      display: block;
+    }
+  }
 
   a{
     display:inline-block;
@@ -58,7 +66,7 @@ const Section  = styled.div`
 
   .header-button{
     display: inline-lock;
-    padding: 0.8em 2em;
+    padding: 0.6em 2em;
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;

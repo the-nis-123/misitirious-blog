@@ -34,7 +34,12 @@ const Wrapper = styled.div`
   padding: 3em 0;
   background-color: white;
   display: grid;
-  gap: 20px;
+  gap: 1em;
+
+  @media only screen and (min-width: 720px)  {
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+  }
 `
 
 const Section = styled.section`

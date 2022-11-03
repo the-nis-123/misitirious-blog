@@ -47,7 +47,11 @@ const Testify = styled.div`
   display: grid;
   background-color: inherit;
   gap: 10px;
-  grid-area: footer;
+
+  @media only screen and (min-width: 720px)  {
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+  }
 
    h5{
     color:#de9c9d;
@@ -58,7 +62,7 @@ const Testify = styled.div`
   section{
     h3{
       padding: 10px 0;
-      color: #594e47
+      color: #594e47;
       white-space: nowrap;
       text-align: center;
     }

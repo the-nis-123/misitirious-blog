@@ -13,17 +13,17 @@ export default createGlobalStyle`
   *,::before, ::after{
     margin: 0;
     padding: 0;
+    user-select: none; 
     box-sizing: border-box;
   }
 
   html{
     scroll-behavior: smooth;
-    font-size:100%;
+    font-size: 100%;
   }
 
   body{
     font-family: 'Sora', sans-serif;
-    overflow: hidden;
     height: 100vh;
     width: 100vw;
   }
@@ -32,16 +32,9 @@ export default createGlobalStyle`
   #root{
     font-family: 'Signika';
     background-color: #f2f2f2;
-    user-select: none; 
-    position: relative;
     height: 100%;
     width: 100%;
-    overflow: auto;
-  }
-
-  ::-webkit-scrollbar{
-    display: none;
-    background: #0a000a;
+    overflow: hidden;
   }
 
   .hide-on-small-screens{

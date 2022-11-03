@@ -28,13 +28,20 @@ const Wrapper = styled.section`
   grid-area: poster;
   padding: 1em 0;
   background-color: black;
-  gap: 2em;
+  gap: 3em;
   height: auto;
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center;
   position: relative;
   font-family: 'Noto Sans Vai', sans-serif;
+  
+
+  @media only screen and (min-width: 720px)  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
 
   section{
     flex: 50%;
