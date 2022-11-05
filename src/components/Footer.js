@@ -44,7 +44,12 @@ const Section = styled.section`
   text-align: center;
 
 
-  @media only screen and (min-width: 720px)  {
+  @media only screen and (min-width: 640px)  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  @media only screen and (min-width: 1000px)  {
     grid-template-columns: repeat(4, 1fr);
   }
 `

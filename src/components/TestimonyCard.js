@@ -3,12 +3,12 @@ import styled from "styled-components";
 const TestimonyCard = ({name, job, company,image, message}) => {
   return (
     <Wrapper>
-        <Image src={image} alt='' />
-        <section>
-          <h3>{name}</h3>
-          <h5>{job}, {company}</h5>
-          <p>{message}</p>
-        </section>
+      <Image src={image} alt='' />
+      <section>
+        <h3>{name}</h3>
+        <h5>{job}, {company}</h5>
+        <p>{message}</p>
+      </section>
     </Wrapper>
   )
 }
@@ -16,14 +16,16 @@ const TestimonyCard = ({name, job, company,image, message}) => {
 export default TestimonyCard;
 
 const Wrapper = styled.div`
-  height: auto;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-family: 'Noto Sans Vai', sans-serif;
-  text-align: center;
-
+    height: auto;
+    padding: 1em;
+    border-radius: 5px;
+    font-family: 'Noto Sans Vai', sans-serif;
+    text-align: center;
+    background-color: white;
+    min-width: 14em;
+    min-height: 20em;
   section{
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 
     h3{
       color: #0a0e59;
@@ -45,8 +47,9 @@ const Wrapper = styled.div`
 `
 
 const Image = styled.img`
-  width: 60%;
-  height: auto;
+  width: 8em;
+  height: 8em;
   display: block;
   margin: 0 auto;
+  border-radius: 50%;
 `

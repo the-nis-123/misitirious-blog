@@ -7,12 +7,15 @@ const ContextWrapper = ({ children }) => {
   const events = useFetch('events.json');
   const gallery = useFetch('gallery.json');
   const comments = useFetch('users.json');
+  const hero = useFetch('hero.json');
+
   
   return (
     <AppContext.Provider value={{
       comments,
       events,
-      gallery
+      gallery,
+      hero
     }}>
       {children}
     </AppContext.Provider>

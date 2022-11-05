@@ -4,27 +4,30 @@ import SideBarIcons from "./SideBarIcons";
 import { RoundedButton, RoundButtonWhite } from "./Button";
 
 const HeroSlider = () => {
-  const image = 'https://img.freepik.com/free-photo/pink-handbags_1203-7710.jpg?w=826&t=st=1667506331~exp=1667506931~hmac=16216d55ed0af3e098ac3204e8ae7bb1f70e3f5ace368bb941fb08467e5736ff'
+  const image = 'https://img.freepik.com/free-photo/background-shoes-pair-men-red_1203-6407.jpg?t=st=1667506232~exp=1667506832~hmac=de22aef39e11b08d483d122c0114ada4c19e1e88abca866c9fadca7705034a1e'
   return (
   <Slider>
     <SideBarIcons />
 
     <Hero>
       <Section>
-        <h4>unmatched quality</h4>
+        <section>
+          <h4>unmatched quality</h4>
           <h1>Elegant, Slick,<br/> and Trending</h1>
           <p>
             Every day and all year round walk out of your
             door feeling like <br /> that King, that Queen you were always meant to be.
             <br/> You can't get it wrong with MISITIRIOUS
-          </p>  
-          <section className="buttons">
-            <RoundedButton to='/'>Order Now</RoundedButton>
+          </p> 
+        </section> 
 
-            <RoundButtonWhite to='/about'>
-              About Us
-            </RoundButtonWhite>
-          </section>
+        <section className="buttons">
+          <RoundedButton to='/'>Order Now</RoundedButton>
+
+          <RoundButtonWhite to='/about'>
+            About Us
+          </RoundButtonWhite>
+        </section>
       </Section>
 
 
@@ -41,62 +44,109 @@ export default HeroSlider;
 
 const Slider = styled.div`
   width: 100%;
-  display: flex;
-  align-items: center;
+  position: relative;
+  height: 50vh;
   background-color: white;
-  padding: 0 2em;
+
+
+  @media only screen and (min-width: 720px)  {
+    display: flex;
+    align-items: center;
+    height: auto;
+    min-height: 60vh;
+  }
+  
 `
 
 const Image = styled.div`
-  width: 60%;
+  width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+
+  @media only screen and (min-width: 720px)  {
+    position: unset;
+    flex: 50%;
+  }
 
   img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    object-position: center;
   }
 `
 
 const Hero = styled.div`
-  width: calc(100% - 4em);
-  display:flex;
-  justify-content:  center;
-  align-items: center;
-  background-color: inherit;
-  padding: 2em 0 2em 5em;
-  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
 
   @media only screen and (min-width: 720px)  {
     text-align: left;
     justify-content:  space-between;
+    display:flex;
+    align-items: center;
+    padding: 2em;
+  }
+
+
+  @media only screen and (min-width: 1000px)  {
+    width: calc(100% - 4em);
   }
   
   .buttons{
     display:flex;
     justify-content:center;
+    gap: 2em;
 
     @media only screen and (min-width: 720px)  {
       justify-content:flex-start;
+      padding: 2em 0;
     }
   }
 `
 
 const Section = styled.section`
- h1{
-  font-size: 4em;
-  margin:10px 0;
-  font-family: 'Lobster Two';
- }
-
- h4{
-  color: purple;
-  text-transform:uppercase;
- }
-
- section{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  text-align: center;
+  padding: 2em 1em;
   display: flex;
-  gap: 30px;
-  margin-top: 25px;
- }
+  flex-flow: column;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 720px)  {
+    padding: 0 1em;
+    text-align: left;
+    position: unset;
+    flex: 50%;
+  }
+
+
+  @media only screen and (min-width: 1000px)  {
+    display: block;
+  }
+
+  h1{
+      display: none;
+      @media only screen and (min-width: 1000px)  {
+        font-size: 4em;
+        font-family: 'Lobster Two';
+        display: block;
+      }
+    }
+
+  h4{
+    color: purple;
+    text-transform:uppercase;
+    padding: 1em 0;
+    
+    @media only screen and (min-width: 1000px)  {
+      padding: 0;
+    }
+  }
 `

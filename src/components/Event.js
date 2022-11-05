@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
   
 const Event = ({name, image}) => {
   return (
@@ -12,7 +11,6 @@ const Event = ({name, image}) => {
         <p>
           I know it and I love it, but I haven’t always
           followed it in this book. I start sentences with ands and buts.<br/>
-          <Link to='/events'>read more</Link>
         </p>
       </section>
     </Wrapper>
@@ -46,9 +44,10 @@ const Wrapper = styled.div`
 
 const EventImage = styled.div`
   height: 100%;
-  min-width: 40%;
+  width: 40%;
   margin-right: 15px;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 10em;
 `

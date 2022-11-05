@@ -14,7 +14,6 @@ const EventsBlock = () => {
       <h2>Events you wouldn't want to miss</h2>
       <Events>
         <Card>
-          <Overlay />
           <Video autoPlay muted loop>
             <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/rWFRtEk4Ejrjb627h/videoblocks-3324z_catwhdgroup110_rrkw06mzq__319d20e55a4f4ac2b3e1cc8dfcde2b7c__P360.mp4" type="video/mp4" />
           </Video>
@@ -48,11 +47,11 @@ const Wrapper = styled.div`
 
 const Events = styled.div`
   background-color: inherit;
+  display: grid;
+  gap: 2em;
 
-  @media only screen and (min-width: 720px)  {
-    display: grid;
+  @media only screen and (min-width: 800px)  {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
   }
 `
 
@@ -75,12 +74,3 @@ const Video = styled.video`
   aspect-ratio: 16/9;
 `
 
-const Overlay = styled.section`
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
-  background-color: darkcyan;
-  z-index:1;
-`

@@ -21,8 +21,8 @@ function Cart() {
       <QuickAccess />
       <PosterBlock  image={image6}/>
       <LandingPageWidget data={events} />
-      <EventsBlock />
       <PartnersBlock />
+      <EventsBlock />
       <TestimonyBlock />
       <FooterBlock />
     </Wrapper>

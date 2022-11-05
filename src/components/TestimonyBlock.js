@@ -2,6 +2,7 @@ import styled from "styled-components";
 import TestimonyCard from "./TestimonyCard";
 import useAppContext from '../hooks/useAppContext';
 import useDummyText from '../hooks/useDummyText';
+import Carousel from "./carousel/Carousel";
 
 const TestimonyBlock = () => {
   const {comments} = useAppContext();
@@ -11,23 +12,22 @@ const TestimonyBlock = () => {
   return (
     <Wrapper>
       <h2>Word on the street about us</h2>
-       
-      <Testify>
-        <If condition={comments.data}>
+
+      <Carousel show={4} infiniteLoop auto={true}>
+        <If condition={ comments.data }>
           <For each='comment' of={comments.data.users}>
             <TestimonyCard 
-            name={comment.username} 
-            job={comment.job}
-            image={comment.avatar}
-            company={comment.company}
-            message={message}
-            key={comment.id}
-          />
+              name={comment.username} 
+              job={comment.job}
+              image={comment.avatar}
+              company={comment.company}
+              message={message}
+              key={comment.id}
+            />
           </For>
         </If>
-      </Testify>
+      </Carousel>
     </Wrapper>
-   
   )
 }
 
@@ -41,21 +41,10 @@ const Wrapper = styled.div`
    h2{
     padding: 10px 30px;
    }
-`
 
-const Testify = styled.div`
-  display: grid;
-  background-color: inherit;
-  gap: 10px;
-
-  @media only screen and (min-width: 720px)  {
-    grid-template-columns: repeat(5,1fr);
-    align-items: center;
-  }
 
    h5{
     color:#de9c9d;
-    white-space: nowrap;
     text-align: center;
    }
 

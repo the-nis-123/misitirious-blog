@@ -40,29 +40,39 @@ const Wrapper  = styled.header`
   position: sticky;
   top: 0;
   z-index: 5;
+  padding: 1em;
 `
 
 const Section  = styled.div`
   display: flex;
   align-items:center;
-  h2{
+
+  h2, .menu{
     display: none;
   }
 
   @media only screen and (min-width: 640px)  {
     h2{
       display: block;
+      white-space: nowrap;
     }
   }
 
-  a{
-    display:inline-block;
-    margin-right: 15px;
-    text-decoration: none;
-    white-space: nowrap;
-    font-family: 'Noto Sans Vai', sans-serif;
-    color: purple;
+  @media only screen and (min-width: 1000px)  {
+    .menu{
+      display: block;
+    }
+
+    a{
+      display:inline-block;
+      margin-right: 15px;
+      text-decoration: none;
+      white-space: nowrap;
+      font-family: 'Noto Sans Vai', sans-serif;
+      color: purple;
+    }
   }
+
 
   .header-button{
     display: inline-lock;
@@ -70,10 +80,6 @@ const Section  = styled.div`
     background-color: var(--primary-color);
     color: white;
     text-decoration: none;
-    white-space: nowrap;
-  }
-
-  h2{
     white-space: nowrap;
   }
 `
